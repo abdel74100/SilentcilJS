@@ -4,11 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Stencil Component Starter</title>
-
+    <link rel="stylesheet" href="/build/stencil-project.css" />
     <script type="module" src="/build/stencil-project.esm.js"></script>
     <script nomodule src="/build/stencil-project.js"></script>
   </head>
   <body>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+    <h1>
     <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  </h1>
+    <div class="grid-container">
+      <my-card image-src="https://cdn.pixabay.com/photo/2024/03/13/19/06/ai-generated-8631634_640.jpg" titre="Chien Joyeux" texte="Un chien joyeux dans le champ."></my-card>
+      <my-card image-src="https://cdn.pixabay.com/photo/2024/04/03/20/06/ai-generated-8673761_640.jpg" titre="Chat Curieux" texte="Un chat curieux explore le jardin."></my-card>
+      <my-card image-src="https://cdn.pixabay.com/photo/2024/02/17/16/08/ai-generated-8579697_640.jpg" titre="Fleurs Printanières" texte="Des couleurs vives de printemps."></my-card>
+      <my-card image-src="https://cdn.pixabay.com/photo/2017/08/01/17/27/jellyfish-2566795_640.jpg" titre="Méditation" texte="Trouver la paix intérieure à travers la méditation."></my-card>
+      <my-card image-src="https://cdn.pixabay.com/photo/2024/01/20/07/51/ai-generated-8520530_640.png" titre="Montagnes Majestueuses" texte="La grandeur des montagnes à l'aube."></my-card>
+    </div>
+    
+  
   </body>
 </html>
